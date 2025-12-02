@@ -17,7 +17,7 @@ def main():
     os.makedirs(f"{project_name}/app", exist_ok=True)
 
     # 写 app/main.py
-    with open(f"{project_name}/app/main.py", "w") as f:
+    with open(f"{project_name}/app/app.py", "w") as f:
         f.write(
             f"from fastapi import FastAPI\n\n"
             f"app = FastAPI()\n\n"

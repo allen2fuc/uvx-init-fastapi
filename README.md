@@ -25,7 +25,7 @@ myapp
 ├── Makefile
 ├── README.md
 ├── app
-│   └── main.py
+│   └── app.py
 ├── docker-compose.yml
 └── pyproject.toml
 ```
