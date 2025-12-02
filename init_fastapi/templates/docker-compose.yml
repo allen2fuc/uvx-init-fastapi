@@ -1,0 +1,8 @@
+services:
+  ${project_name}:
+    build: .
+    container_name: ${project_name}
+    volumes:
+      - ./app:/app
+    ports:
+      - "8000:8000"

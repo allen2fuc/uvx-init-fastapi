@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "init-fastapi"
+version = "0.1.0"
+description = "FastAPI scaffolding tool"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[tool.hatch.build]
+packages = ["init_fastapi"]
+include-package-data = true  # 包含非 .py 文件
+
+[project.scripts]
+init-fastapi = "init_fastapi.cli:main"
+
