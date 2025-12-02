@@ -1,6 +1,6 @@
 .PHONY: help build push build-push up down restart logs clean test
 
-IMAGE_NAME := uhub.service.ucloud.cn/vst_repository/${project_name}
+IMAGE_NAME := uhub.service.ucloud.cn/your_repository/${project_name}
 VERSION ?= latest
 
 help: ## 显示帮助信息
@@ -63,9 +63,6 @@ clean-all: ## 清理所有 Docker 资源（包括镜像）
 	@echo "⚠️  清理所有 Docker 资源..."
 	docker system prune -a -f
 	@echo "✅ 清理完成"
-
-shell: ## 进入容器 Shell
-	docker exec -it sign-vision-api /bin/bash
 
 login: ## 登录 UCloud 容器镜像仓库
 	@echo "🔐 登录 UCloud 容器镜像仓库..."
